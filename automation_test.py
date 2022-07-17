@@ -17,14 +17,17 @@ else:
     print("Title Verification Failed!\n")
 
 
-#TestCase 2: Home button
+
+
+#TestCase 2: Explore button
 print("TestCase #2:")
 try: 
-    link = driver.find_element_by_link_text("The Sparks Foundation")
+    link = driver.find_element_by_link_text("EXPLORE")
     link.click()    
-    print("Home link works!\n")
+    print("Explore button works!\n")
 except NoSuchElementException:
-    print("Home Link Doesn't Work!\n")
+    print("Explore button Doesn't Work!\n")
+
 
 # TestCase 3: Check if navbar appears
 print("TestCase #3:")
@@ -143,4 +146,6 @@ try:
     print('Programs Page Verified!\n')
 except NoSuchElementException:
     print('No New Tab opened. Failed!\n')
-    time.sleep(3)         
+    time.sleep(3)
+
+
